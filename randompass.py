@@ -11,8 +11,6 @@ def generate_password(length, use_lowercase, use_uppercase, use_digits, use_spec
         characters += string.digits
     if use_special:
         characters += string.punctuation
-    if custom_special_chars:
-        characters += custom_special_chars
 
     if not characters:
         print("Error: You must select at least one character type.")
